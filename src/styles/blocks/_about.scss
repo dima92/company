@@ -1,0 +1,72 @@
+@use "../helpers" as *;
+@use "../variables" as *;
+
+.about {
+  padding-block: fluid(120, 60);
+  background-color: $white-color;
+  color: $dark-grey-color;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    gap: fluid(80, 40);
+
+    @include respond-to("tablet") {
+      grid-template-columns: 1fr;
+      gap: to-rem(40);
+    }
+  }
+
+  &__stats {
+    @include flex(column, flex-start, flex-start, 60);
+
+    @include respond-to("tablet") {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: to-rem(20);
+    }
+  }
+
+  &__stat-item {
+    @include respond-to("tablet") {
+      min-width: to-rem(140);
+    }
+  }
+
+  &__stat-number {
+    display: block;
+    font-weight: 300;
+    line-height: 1.4;
+    font-size: fluid(64, 40);
+    margin-bottom: to-rem(8);
+  }
+
+  &__stat-label {
+    font-weight: 400;
+    font-size: to-rem(16);
+    color: $grey-color;
+    line-height: 1.5;
+  }
+
+  &__content {
+    @include flex(column, flex-start, flex-start, 60);
+  }
+
+  &__title {
+    font-weight: 700;
+    line-height: 1.4;
+    font-size: fluid(44, 24);
+    max-width: to-rem(570);
+  }
+
+  &__text-block {
+    @include flex(column, flex-start, flex-start, 20);
+    max-width: to-rem(570);
+  }
+
+  &__text {
+    font-size: fluid(16, 14);
+    line-height: 1.5;
+  }
+}

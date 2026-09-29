@@ -1,0 +1,89 @@
+@use "../helpers" as *;
+@use "../variables" as *;
+
+.offers {
+  padding-block: fluid(120, 60);
+  background-color: $white-color;
+  color: $dark-grey-color;
+
+  &__container {
+    @include flex(column, flex-start, stretch, fluid(60, 40));
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    aspect-ratio: 1200 / 430;
+
+    @include respond-to("tablet") {
+      display: flex;
+      flex-direction: column;
+      aspect-ratio: auto;
+
+      &:nth-child(1) {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+
+  &__content {
+    @include flex(column, center, flex-start);
+    padding: fluid(60, 24);
+
+    @include respond-to("tablet") {
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: fluid(24, 20);
+    color: $grey-color;
+    margin-bottom: to-rem(20);
+  }
+
+  &__text {
+    font-size: fluid(16, 14);
+    line-height: 1.5;
+    color: $dark-grey-color;
+    margin-bottom: fluid(60, 20);
+    max-width: to-rem(570);
+  }
+
+  &__btn {
+    @include flex(row, center, center, $isInline: true);
+    min-width: to-rem(180);
+    font-weight: 600;
+    font-size: to-rem(17);
+    color: $white-color;
+    background-color: $dark-grey-color;
+    padding: to-rem(20);
+
+    @include hover {
+      background-color: rgba($dark-grey-color, 0.9);
+      transform: translateY(-1px);
+    }
+  }
+
+  &__image-ibg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    @include respond-to("tablet") {
+      height: to-rem(300);
+    }
+
+    picture,
+    img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@use "helpers/functions" as *;
+
+// Сетка
+$container-width: 1200;
+$container-padding-x: 15;
+
+// Анимации
+$transition-duration: 0.3s;
+$transition-base: all $transition-duration ease-in-out;
+
+// Шрифты
+$font-family: "Inter", sans-serif;
+
+// ==========================================================================
+// ЦВЕТОВАЯ ПАЛИТРА (UI-KIT) — ПРОЕКТ COMPANY
+// ==========================================================================
+
+$white-color: #fff;
+$grey-color: #838383;
+$dark-grey-color: #1d1d1f;

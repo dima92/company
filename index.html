@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+    <title></title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <a href="/" class="header__logo logo">Company</a>
+
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <img src="/src/assets/icons/search.svg" alt="Search" />
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Portfolio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#team" class="nav__link">Team</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#blog" class="nav__link">Blog</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__burger burger" aria-label="Открыть меню">
+          <span></span>
+        </button>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="hero__container container">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              We produce<br />
+              the best products
+            </h1>
+            <p class="hero__text">
+              Mattis quam, lectus et justo amet, tortor, lectus dapibus est.
+              Habitasse efficitur sodales vel est.
+            </p>
+            <a href="#" class="hero__btn">Button</a>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="about__container container">
+          <div class="about__stats">
+            <div class="about__stat-item">
+              <span class="about__stat-number">20,000</span>
+              <p class="about__stat-label">completed products</p>
+            </div>
+            <div class="about__stat-item">
+              <span class="about__stat-number">10,000</span>
+              <p class="about__stat-label">prototypes</p>
+            </div>
+            <div class="about__stat-item">
+              <span class="about__stat-number">347</span>
+              <p class="about__stat-label">completed projects</p>
+            </div>
+          </div>
+
+          <div class="about__content">
+            <h2 class="about__title">
+              Amet, mattis dapibus malesuada arcu dapibus nec efficitur et
+              dictum. <br />
+              In sit odio. Tempus leo, dictum.
+            </h2>
+
+            <div class="about__text-block">
+              <p class="about__text">
+                Amet, mattis dapibus malesuada arcu dapibus nec efficitur et
+                dictum. In sit odio. Tempus leo, dictum. Sit mattis sapien,
+                vulputate...
+              </p>
+              <p class="about__text">
+                Habitasse efficitur sodales vel est. Vestibulum ante ipsum
+                primis in faucibus orci luctus et ultrices posuere cubilia
+                curae;
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="video-block" id="video">
+        <div class="video-block__container container">
+          <div class="video-block__wrapper">
+            <picture class="video-block__poster">
+              <source
+                srcset="/src/assets/images/video-bg.webp"
+                type="image/webp"
+              />
+              <img
+                src="/src/assets/images/video-bg.jpg"
+                alt="Превью видео компании"
+                loading="lazy"
+              />
+            </picture>
+
+            <video
+              class="video-block__video"
+              src="/src/assets/video/company-video.mp4"
+              prefetch="metadata"
+            ></video>
+
+            <button
+              class="video-block__play"
+              type="button"
+              aria-label="Запустить видео"
+            >
+              <img src="/src/assets/icons/play.svg" alt="Play" />
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="offers" id="offers">
+        <div class="offers__container container">
+          <div class="offers__item">
+            <div class="offers__content">
+              <h3 class="offers__title">Et odio</h3>
+              <p class="offers__text">
+                Mauris eget nec nulla dolor ex. Sodales luctus pellentesque cras
+                ornare lorem luctus lectus sed consectetur quam, est. Libero,
+                odi
+              </p>
+              <a href="#" class="offers__btn">Button</a>
+            </div>
+            <div class="offers__image-ibg">
+              <picture>
+                <source
+                  srcset="/src/assets/images/offer-1.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="/src/assets/images/offer-1.jpg"
+                  alt="Предложение первое"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+          </div>
+
+          <div class="offers__item">
+            <div class="offers__image-ibg">
+              <picture>
+                <source
+                  srcset="/src/assets/images/offer-2.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="/src/assets/images/offer-2.jpg"
+                  alt="Предложение второе"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div class="offers__content">
+              <h3 class="offers__title">Integer dapibus dictum</h3>
+              <p class="offers__text">
+                it pulvinar tempus amet dolor dui vulputate tortor, luctus lorem
+                in nunc eleifend ipsum justo et venenatis dictumst.
+              </p>
+              <a href="#" class="offers__btn">Button</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="quote" id="quote">
+        <div class="quote__container container">
+          <blockquote class="quote__wrapper">
+            <span class="quote__subtitle">Quote</span>
+
+            <p class="quote__text">
+              Accumsan vulputate efficitur in amet, vestibulum ornare morbi
+              accumsan leo, est. Consectetur ultricies. Sapien est. Dictumst.
+              Sapien habitasse interdum in amet, lectus molestie vel ut.
+              Malesuada efficitur mattis id mattis aenean interdum lectus quam,
+              dapibus nec augue vulputate leo, ornare elit.
+            </p>
+
+            <cite class="quote__author">Alex Lee / Co-founder & SEO</cite>
+          </blockquote>
+        </div>
+      </section>
+      <section class="promo-slider" id="slider">
+        <div class="promo-slider__swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide promo-slider__slide">
+              <div class="promo-slider__image-ibg">
+                <img
+                  src="./src/assets/images/slide-1.webp"
+                  alt="Архитектура здания"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="promo-slider__arrow promo-slider__arrow--prev"
+            type="button"
+            aria-label="Предыдущий слайд"
+          >
+            <img src="./src/assets/icons/arrow-left.svg" alt="Назад" />
+          </button>
+          <button
+            class="promo-slider__arrow promo-slider__arrow--next"
+            type="button"
+            aria-label="Следующий слайд"
+          >
+            <img src="./src/assets/icons/arrow-right.svg" alt="Вперед" />
+          </button>
+        </div>
+      </section>
+      <section class="services" id="services">
+        <div class="services__container container">
+          <h2 class="visually-hidden">Our Services</h2>
+
+          <div class="services__list">
+            <div class="services__item">
+              <h3 class="services__item-title">Branding</h3>
+              <p class="services__item-text">
+                Quam, tortor, interdum consectetur eleifend integer et. Accumsan
+                vulputate efficitur in amet, vestibulum ornare morbi accumsan
+                leo, est. Consectetur ultricies.
+              </p>
+            </div>
+
+            <div class="services__item">
+              <h3 class="services__item-title">Web-apps</h3>
+              <p class="services__item-text">
+                Malesuada efficitur mattis id mattis aenean interdum lectus
+                quam, dapibus nec augue vulputate leo, ornare elit. Pulvinar sed
+                quam, arcu pulvinar nisl ipsum quis, sodales molestie ex.
+              </p>
+            </div>
+
+            <div class="services__item">
+              <h3 class="services__item-title">Design</h3>
+              <p class="services__item-text">
+                Cras amet, sed sapien orci, leo, sit ornare mus tortor, ex.
+                Mauris non orci, sed elit. Cursus ex. Aenean ipsum dolor augue
+                tempus et molestie ipsum adipiscing leo, sit interdum venenatis
+                odio.
+              </p>
+            </div>
+
+            <div class="services__item">
+              <h3 class="services__item-title">Strategy</h3>
+              <p class="services__item-text">
+                Quam, tortor, interdum consectetur eleifend integer et. Accumsan
+                vulputate efficitur in amet, vestibulum ornare morbi accumsan
+                leo, est. Consectetur ultricies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="contact">
+      <div class="footer__container container">
+        <div class="footer__info">
+          <a href="/" class="footer__logo logo">Company</a>
+          <address class="footer__address">
+            Domit BV, Monitorweg 1, Almere 1322BL, Netherlands
+          </address>
+          <div class="footer__socials">
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <img src="./src/assets/icons/facebook.svg" alt="" />
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Telegram">
+              <img src="./src/assets/icons/telegram.svg" alt="" />
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Google Plus">
+              <img src="./src/assets/icons/google-plus.svg" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__subscribe">
+          <h3 class="footer__subscribe-title">
+            Id sodales interdum dui mollis non in odio
+          </h3>
+          <form action="#" class="footer__form">
+            <div class="footer__input-wrapper">
+              <input
+                type="email"
+                class="footer__input"
+                placeholder="E-MAIL"
+                required
+                aria-label="Ваш Email"
+              />
+              <button
+                type="submit"
+                class="footer__submit-btn"
+                aria-label="Подписаться"
+              >
+                <img src="./src/assets/icons/arrow-footer.svg" alt="" />
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="src/js/main.js" type="module"></script>
+  </body>
+</html>

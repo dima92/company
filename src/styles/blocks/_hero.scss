@@ -1,0 +1,69 @@
+@use "../helpers" as *;
+@use "../variables" as *;
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  @include flex(column, center, center);
+  padding-block: fluid(150, 80) fluid(60, 40);
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/images/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    @include flex(column, center, flex-start);
+  }
+
+  &__content {
+    max-width: to-rem(936);
+
+    @include respond-to("tablet") {
+      max-width: 100%;
+      text-align: center;
+      @include flex(column, center, center);
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    line-height: 1.1;
+    font-size: fluid(96, 40);
+    margin-bottom: fluid(30, 20);
+  }
+
+  &__text {
+    max-width: to-rem(468);
+    line-height: 1.5;
+    font-size: fluid(16, 14);
+    margin-bottom: fluid(50, 30);
+  }
+
+  &__btn {
+    @include flex(row, center, center, $isInline: true);
+    min-width: to-rem(180);
+    font-weight: 600;
+    font-size: to-rem(17);
+    color: $dark-grey-color;
+    background-color: $white-color;
+    padding: to-rem(20);
+
+    @include hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+  }
+}

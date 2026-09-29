@@ -1,0 +1,40 @@
+@use "../helpers" as *;
+@use "../variables" as *;
+
+.quote {
+  padding-block: fluid(140, 70);
+  background-color: $white-color;
+  color: $dark-grey-color;
+
+  &__wrapper {
+    margin: 0 auto;
+    max-width: to-rem(820);
+    width: 100%;
+    @include flex(column, center, flex-start, 0);
+  }
+
+  &__subtitle {
+    display: block;
+    font-weight: 400;
+    font-size: to-rem(16);
+    line-height: 1.5;
+    color: $grey-color;
+    margin-bottom: fluid(50, 24);
+  }
+
+  &__text {
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: fluid(36, 24);
+    color: $dark-grey-color;
+    margin-bottom: fluid(30, 24);
+  }
+
+  &__author {
+    font-style: normal;
+    font-weight: 400;
+    font-size: to-rem(16);
+    color: $grey-color;
+    line-height: 1.5;
+  }
+}
